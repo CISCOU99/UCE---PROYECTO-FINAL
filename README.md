@@ -37,3 +37,5 @@ Diseñar y desarrollar un sitio web que combine PHP para la lógica del servidor
 <img width="1323" height="435" alt="image" src="https://github.com/user-attachments/assets/0cabe2a4-2f27-4eec-982f-aa6fcb4a4196" />
 
 
+*Proyecto Final académico desarrollado con fines educativos para examen de semestre.
+Uso libre con atribución.*
