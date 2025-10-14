@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/LOGORESTAURANTE.png">
+    <LINK REL=StyleSheet HREF="reserformes.css" TYPE="text/css" MEDIA=screen>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    </style>
+    <center>
+        <table width="100%" align="center" border="0">
+            <tr>
+                <td rowspan="2">
+                    <center><b><img id="imgredes" src="img/horario.png" width=40 height=40></b></center>
+                </td>
+                <td>
+                    <center><b><i>
+                                <font color=red>Lunes - Sabados</font>
+                            </i></b></center>
+                </td>
+                <td rowspan="2">
+                    <center><b><img id="imgredes" src="img/contacto.png" width=40 height=40></b></center>
+                </td>
+                <td>
+                    <center><b><i>
+                                <font color=red>Contactos</font>
+                            </i></b></center>
+                </td>
+                <td rowspan="2">
+                    <center><b><img id="imgredes" src="img/Direccion.png" width=40 height=40></b></center>
+                </td>
+                <td>
+                    <center><b><i>
+                                <font color=red>Direccion</font>
+                            </i></b></center>
+                </td>
+                <td rowspan="2">
+                    <center><b><img id="imgredes" src="img/correo.png" width=40 height=40></b></center>
+                </td>
+                <td>
+                    <center><b><i>
+                                <font color=red>Correo electronico</font>
+                            </i></b></center>
+                </td>
+            </tr>
+            <td>
+                <center><b><a title="" target="_red">09:30 a 17:30</a></b></center>
+            </td>
+            <td>
+                <center><b><a href="https://wa.link/7gku5h" title="Hacer Clic" target="_red">0983532280</b></a></center>
+            </td>
+            <td>
+                <center><b><a
+                            href="https://www.google.com/maps/place/Cuero+y+Caicedo+%26+Versalles,+Quito+170129/@-0.1908223,-78.4976846,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a664cc084b3:0xdb23738d35fc892d!8m2!3d-0.1908277!4d-78.4951097!16s%2Fg%2F11gf37ntcv"
+                            title="Hacer Clic" target="_red">Cuero y Caicedo y Versalles</b></a></center>
+            </td>
+            <td>
+                <center><b>
+                        <address><a href="#contacto">ramontoala63@gmail.com</address>
+                    </b></a></center>
+            </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <center>
+        <a href="inicio.html"><img id="imgredes" src="img/LOGORESTAURANTE.png" width=150 height=150></a><br><br>
+        <b>
+            <hr width=20% color=black>
+        </b>
+        <p><b>
+                <font color=white>Mezcla de Costa y Sierra</font>
+            </b></p>
+
+    </center>
+
+    <title>RESERVACIÓN - LA HUECA MANABA</title>
+</head>
+
+<body style="background-color: aqua;">
+    <main>
+        <header style="color:#03702d; text-align: center;">
+            <center>
+                <H1 id="titulo">LA HUECA MANABA - RESERVACIÓN</H1>
+            </center>
+            </hearder>
+    </main>
+
+    <center>
+        <H1>Completar mi reserva</H1>
+    </center>
+
+    <form action="reserformcod.php" method="post">
+        <fieldset>
+            <legend><strong>Información Personal</strong></legend>
+            <p align="center">
+                Apellidos:
+                <input name="apellidos" type="text" tabindex="1" required autocomplete="off">
+                Nombres:
+                <input name="nombres" type="text" tabindex="2" required autocomplete="off">
+                Cédula:
+                <input name="cedula" type="num" tabindex="3" required autocomplete="off">
+            </p>
+            <p align="center">
+                Edad:
+                <input name="edad" type="num" style="width:50px;" required autocomplete="off" />
+                Celular:
+                <input name="celular" type="num" tabindex="3" required autocomplete="off" />
+                Correo:
+                <input name="correo" type="email" tabindex="3" required autocomplete="off" />
+            </p>
+            <strong>
+                <center>Genero:</center>
+            </strong>
+            <label>
+                <center>
+                    Masculino
+                    <input name="genero" type="radio" value="masculino" />
+                    Femenino
+                    <input name="genero" type="radio" value="femenino" />
+                    Otro
+                    <input name="genero" type="radio" value="otro" />
+            </label></center>
+        </fieldset><br>
+
+        <fieldset>
+            <legend><strong>Elección de mesa</strong></legend>
+            <p align="center">
+                Número de mesa:
+                <datalist id="nmesa">
+                    <option value="Mesa 1" label="Una o dos personas">
+                    <option value="Mesa 2" label="Una o dos personas">
+                    <option value="Mesa 3" label="Cuatro personas">
+                    <option value="Mesa 4" label="Cuatro personas">
+                    <option value="Mesa 5" label="Familiar (8 personas)">
+                </datalist>
+                <label>
+                    <input name="selectmesa" type="select" list="nmesa" required autocomplete="off" />
+                </label>
+                </span>
+
+                <span>
+                    Fecha:
+                    <label>
+                        <input type="date" name="fecha" required autocomplete="off" />
+                    </label>
+                </span>
+
+                <span>
+                    Hora:
+                    <label>
+                        <input type="time" id="appt" name="hora" min="10:00" max="18:00" required autocomplete="off" />
+                    </label>
+                </span>
+            </p>
+        </fieldset><br>
+
+        <fieldset>
+            <legend><strong>Datos del acompañante</strong></legend>
+            <p align="center">
+                Número de acompañante:
+                <input name="nacom" type="num" style="width:2%;" required autocomplete="off" />
+                Apellidos:
+                <input name="apellidoaco" type="text" tabindex="1" required autocomplete="off">
+                Nombres:
+                <input name="nombreaco" type="text" tabindex="2" required autocomplete="off">
+                Cédula:
+                <input name="cedulaaco" type="num" style="width:10%;" required autocomplete="off" />
+            </p>
+        </fieldset><br>
+
+            <center>
+                <input class="activo" type="submit" ; value="RESERVAR" />
+                <input class="activo2" type="reset" ; value="LIMPIAR" />
+              </center>
+        </form>
+</body>
+<br>
+<footer>
+    <ul>
+        <h2>
+            <right>Siguenos</right>
+        </h2>
+    </ul>
+    <b>
+        <hr width=100% color=black>
+    </b>
+    <p>
+    <ul>Disfruta cada plato diferente cada dia.</p>
+    </ul>
+    <h3>
+        <ul>
+            <right>Redes Sociales</right>
+        </ul>
+    </h3>
+
+    <ul>
+        <table width="0%" align="left" border="0">
+            <tr>
+                <td>
+                    <center><a href="https://www.facebook.com/" target="_blank"><img id="imgredes"
+                                src="img/facebook.png" width=50 height=50></a>
+                </td>
+                <td>
+                    <center><a href="https://web.whatsapp.com/" target="_blank"><img id="imgredes"
+                                src="img/whatsapp.png" width=50 height=50></a>
+                </td>
+            </tr>
+        </table>
+    </ul>
+    <br><br><br>
+    <ul>Comentarios</ul>
+    <ul><br><textarea rows="2" cols="100" name="Comentarios">
+        Escriba aquí si existe algún inconveniente o duda.
+        </textarea>
+        </form>
+    </ul>
+
+    <ul>
+        <pre><b><left><font size=2 color=black>By: Francisco Toala. Todos los derechos reservados.2023</font></pre></b>
+        </left>
+    </ul>
+</footer>
+
+</html>

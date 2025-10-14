@@ -1,0 +1,121 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    margin: 0%;
+    width: auto;
+}
+
+header {
+    display: flexbox;
+    justify-content: center;
+    background-color: #EDF7C6;
+    height: auto;
+}
+
+#titulo:hover {
+    font-weight: bolder;
+    color: crimson;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(241, 235, 235);
+}
+
+a:hover {
+    font-weight: bold;
+    color: #3ea3aa;
+}
+
+body {
+
+    background-image: url("IMG/reser.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+fieldset {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    background-color: #2c2c2c80;
+    border-radius: 9%;
+}
+
+textarea {
+    outline: none;
+    border: 0%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="num"],
+form input[type="date"],
+form input[type="time"],
+form input[type="submit"],
+form input[type="reset"],
+form input[type="select"] {
+    width: 160px;
+    padding: 4px 6px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    margin: 2px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    width: 160px;
+    padding: 4px 6px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #3eca2b;
+    margin: 2px 30px;
+    display: inline-block;
+}
+
+form input[type="reset"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    width: 160px;
+    padding: 4px 6px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #da2a2a;
+    margin: 2px 30px;
+    display: inline-block;
+}
+
+.activo:hover{
+    font-weight: bold;
+    color: #f2f8f8;   
+}
+
+.activo2:hover{
+    font-weight: bold;
+    color: #f2f8f8;   
+}
+
+.tablaagendar{
+    background-color: #418ec2;
+    border: #f2f8f8;
+    border-radius: 10%;
+    padding: 7px 6px;
+    margin: 2px 0;
+    
+}
+
+.agendarnuevo{
+    font-weight: bold;
+    color: #fcfcfc;   
+}
+
+.agendarnuevo:hover{
+    font-weight: bold;
+    color: #281277;   
+}
